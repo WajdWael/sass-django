@@ -15,7 +15,6 @@ def home_page_view(request, *args, **kwargs):
     }
     path = request.path
     html_tamplate = "home.html"
-    print(path)
     PageVisit.objects.create()
     return render(request, html_tamplate, my_context)
 
